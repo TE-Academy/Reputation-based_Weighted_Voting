@@ -32,7 +32,7 @@ It is possible to create individual curves with distinct properties. It is also 
 
 For instance, there is a three NFT system that should have the following properties:
 1. The weight of NFT 1 should always be at least 5.0.
-2. The weight of NFT 2 should always be exactly four times the weight of NFT 3.
+2. The weight of NFT 3 should always be exactly four times the weight of NFT 2.
 
 These properties could be achieved with the following set of bonding curves:
 
@@ -40,7 +40,7 @@ $$F_1(\vec{x}) = 105.0 - \displaystyle\frac{100.0}{x_1}$$
 
 $$F_2(\vec{x}) = \displaystyle\frac{100.0}{x_2}$$
 
-$$F_3(\vec{x}) = 3 \cdot \displaystyle\frac{100.0}{x_2}$$ 
+$$F_3(\vec{x}) = 4 \cdot \displaystyle\frac{100.0}{x_2}$$ 
 
 
 ## TODO: Add image of curve that could work.
