@@ -12,7 +12,11 @@ $$\vec{w}_k = F_k(\vec{x}),$$ where $w_k$ is the weight of NFT $k$ and the $x_k$
 
 ## Example 1: All Curves the Same
 
-As a basic example, suppose there is a system with three NFTs where the bonding curve for each is defined by $$w_k = F_k(\vec{x}) = \displaystyle\frac{100}{x_k}$$ for $k \in \{1,2,3\}.$$ 
+As a basic example, suppose there is a system with three NFTs where the bonding curve for each is defined by 
+
+$$w_k = F_k(\vec{x}) = \displaystyle\frac{100}{x_k}$$
+
+for $k \in \{1,2,3\}.$$ 
 
 The table below shows how the weight of each NFT would be assigned based on the number of NFTs.
 
@@ -31,8 +35,11 @@ For instance, there is a three NFT system that should have the following propert
 2. The weight of NFT 2 should always be exactly four times the weight of NFT 3.
 
 These properties could be achieved with the following set of bonding curves:
+
 $$F_1(\vec{x}) = 105.0 - \displaystyle\frac{100.0}{x_1}$$
+
 $$F_2(\vec{x}) = \displaystyle\frac{100.0}{x_2}$$
+
 $$F_3(\vec{x}) = 3 \cdot \displaystyle\frac{100.0}{x_2}$$ 
 
 
