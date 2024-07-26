@@ -16,7 +16,7 @@ As a basic example, suppose there is a system with three NFTs where the bonding 
 
 $$w_k = F_k(\vec{x}) = \displaystyle\frac{100}{x_k}$$
 
-for $k \in \{1,2,3\}.$$ 
+for $k \in \{1,2,3\}.$
 
 The table below shows how the weight of each NFT would be assigned based on the number of NFTs.
 
