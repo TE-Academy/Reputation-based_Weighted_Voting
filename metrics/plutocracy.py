@@ -35,7 +35,7 @@ def calc_nakamoto_coefficient(weighted_voters: Dict[str, Dict[str, float]],
     for _, info in sorted_voter_copy.items():
         voter_number += 1
         cumulative_weight += info.get("weight", 0)
-        if cumulative_weight > half_total_weight:
+        if cumulative_weight > winning_weight:
             nakamoto_coefficient = voter_number
             break
 
