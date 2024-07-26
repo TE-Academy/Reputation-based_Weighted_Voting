@@ -36,7 +36,7 @@ For instance, there is a three NFT system that should have the following propert
 
 These properties could be achieved with the following set of bonding curves:
 
-$$F_1(\vec{x}) = 105.0 - \displaystyle\frac{100.0}{x_1}$$
+$$F_1(\vec{x}) = 10.0 - 5 \cdot \displaystyle\frac{10.0}{10.0 - x_1}$$
 
 $$F_2(\vec{x}) = \displaystyle\frac{100.0}{x_2}$$
 
