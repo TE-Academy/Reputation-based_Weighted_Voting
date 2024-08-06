@@ -1,6 +1,9 @@
 
+![RWV-Banner-Github](https://github.com/user-attachments/assets/0d60b3ff-bec3-4cbe-882f-1049f92426b1)
 
-# Reputation-based_Weighted_Voting
+# Reputation-based Weighted Voting (RWV)
+
+_RWV is a project by Token Engineering Academy Research (akrtws, Eightarmsninebrainsm and Vitor Marthendal), originating from an educational program at TE Academy. It provides vote weighting mechanisms, a simulator, and Snapshot Strategy templates to roll out votings where knowledge and achievements count. If you find a bug, feel free to report. If you do a PR where tests pass, we'll be happy to merge it. And feel free to fork this repo and change it as you wish._
 
 ### Introduction
 * What is Reputation-based Weighted Voting
