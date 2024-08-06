@@ -9,11 +9,13 @@ _RWV is a project by Token Engineering Academy Research (akrtws, Eightarmsninebr
 ### Introduction
 The design space of token-based governance is enormous. However, in the reality of DAO governance, only a handful of primitives have achieved significant adoption. 1token1vote links voting power directly to the number of tokens held. Vote delegation allows token holders to assign their voting rights to another party, enabling concentrated decision-making power based on trust. Reputation-based Weighted Voting (RWV) aims to complement these concepts with a third class of voting mechanism: make a voter’s track record count in decision-making and use proofs of expertise and achievements as a signal to define the voting weight and decision-making power.
 
-This RWV Toolbox enable communities, governance researchers and DAO participants to roll out reputation-based weighted voting in their own community.
-* It integrates on-chain proofs to define voting power (ERC-20/ERC-721/ERC-1155)
-* It provides vote weighting mechanisms and customizable parameters to make the vote weighting fit to the needs of any community
-* It provides ready-to-run simulations to test the parameter settings (dictatorship-proof, sybil resistance)
-* It offers templates to create Snapshot strategies and role out a RWV on Snapshot
+This RWV Toolbox enables communities, governance researchers, and DAO participants to roll out reputation-based weighted voting in their community.
+
+Use it, to...
+* Integrate on-chain proofs to define voting power (ERC-20/ERC-721/ERC-1155)
+* Select vote weighting mechanisms and customize parameters to make the vote weighting fit to your community
+* Run ready-to-use simulations to test the parameter settings (dictatorship-proof, sybil resistance)
+* Role out a RWV on Snapshot using Snapshot Strategy templates
 
 ### Table of Contents
 (links to sections below)
