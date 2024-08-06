@@ -11,7 +11,7 @@ The design space of token-based governance is enormous. However, in the reality 
 
 This RWV Toolbox enables communities, governance researchers, and DAO participants to roll out reputation-based weighted voting in their community.
 
-Use it, to...
+Use the RWV Toolbox, to...
 * Integrate on-chain proofs to define voting power (ERC-20/ERC-721/ERC-1155)
 * Select vote weighting mechanisms and customize parameters to make the vote weighting fit to your community
 * Run ready-to-use simulations to test the parameter settings (dictatorship-proof, sybil resistance)
