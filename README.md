@@ -20,8 +20,9 @@ Use it, to...
 ### Table of Contents
 (links to sections below)
 
+---
 
-### Using this framework
+### Using this framework [write a brief paragraph on every step]
 To apply Reputation-based Weighted Voting, take the following steps
 * Understand the Components and Design Space (see below)
 * Select the Weighting Mechanism for your Voting Case
@@ -30,12 +31,14 @@ To apply Reputation-based Weighted Voting, take the following steps
 * Set up your voting in Snapshot
 * Run your voting
 
-### Understand the components
+### Understand the components [add diagram]
 * Ballot (Voter Input)
 * Vote Weighting Mechanisms
 * Aggregation Rule
 * Vote Outcome (Voter Output)
 * Why simulations?
+
+---
 
 ### Vote Weighting Mechanisms
 * Dynamic Network-Scaling (Introduction / Use Case / Math Specification)
