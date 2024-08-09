@@ -15,7 +15,7 @@ Use the RWV Toolbox, to...
 * Integrate on-chain proofs to define voting power (ERC-20/ERC-721/ERC-1155)
 * Select vote weighting mechanisms and customize parameters to make the vote weighting fit to your community
 * Run ready-to-use simulations to test the parameter settings (dictatorship-proof, sybil resistance)
-* Role out a RWV on Snapshot using Snapshot Strategy templates
+* Role out a RWV on Snapshot using the RWV Snapshot Strategies and your parameter setting 
 
 ### Table of Contents
 (links to sections below)
