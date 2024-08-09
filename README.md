@@ -14,13 +14,31 @@ This RWV Toolbox enables communities, governance researchers, and DAO participan
 Use the RWV Toolbox, to...
 * Integrate on-chain proofs to define voting power (ERC-20/ERC-721/ERC-1155)
 * Select vote weighting mechanisms and customize parameters to make the vote weighting fit to your community
-* Run ready-to-use simulations to test the parameter settings (dictatorship-proof, sybil resistance)
+* Run ready-to-use simulations to test your parameter setting (dictatorship-proof, sybil resistance)
 * Role out a RWV on Snapshot using the RWV Snapshot Strategies and your parameter setting 
 
 ### Table of Contents
 (links to sections below)
 
 ---
+![01_RWV_votingcomponents](https://github.com/user-attachments/assets/a76b5d9c-2e7b-4d2f-915b-c034e3ca371c)
+
+## Understand the Components of Reputation-based Weighted Voting
+
+### Voting Wallets carrying Reputation
+- in a voting, voters express their preferences. In on-chain votings however, consider your voters as wallets. There might be individuals behind it, or organisations controlling a multi-sig. 
+- they are holding tokens of reputation
+- - examples include transferable, tradeable ERC-20 tokens, that are locked and staked (reputation represents skin in the game, a hodling attitude)
+- - unique ERC-721 tokens, minted for a certain, unique achievement
+- - ERC-1155 tokens, that represent classes of achievements, and wallets holding instances of these achievements.
+
+All voting mechanisms in Reputation-based Weighted Voting Toolbox are made for ERC-1155 tokens. Since optimized for Snapshot votings, RWV processes tokens based on one token smart contract that you define when setting up the Snapshot strategy (see below). However, they can be adapted to ERC-20/-721 cases. Technically, any of these token types is supported by Snapshot stategies. 
+
+
+### Weighting Mechanism
+The Weighting Mechanism assigns a voting weight to these tokens. 
+
+
 
 ### Using this framework [write a brief paragraph on every step]
 To apply Reputation-based Weighted Voting, take the following steps
@@ -40,6 +58,17 @@ To apply Reputation-based Weighted Voting, take the following steps
 * Why simulations?
 
 ---
+
+### Setting up the Snapshot strategy
+- Define the Reputation tokens you'd like to process in your voting, provide the smart contract address
+- Select your Snapshot Strategy:
+  - - Dynamic Network-Scaling
+  - - Bonded Voting Weight
+- Define your parameter setting (see below)
+- Define the ballot
+- Define the voting open/closing data and final settings
+- Run the voting!
+- This tutorial walks you through the process (TODO)
 
 ### Vote Weighting Mechanisms
 * Dynamic Network-Scaling (Introduction / Use Case / Math Specification)
