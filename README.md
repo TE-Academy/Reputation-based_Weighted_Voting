@@ -36,7 +36,23 @@ All voting mechanisms in Reputation-based Weighted Voting Toolbox are made for E
 
 
 ### Weighting Mechanism
-The Weighting Mechanism assigns a voting weight to these tokens. 
+The Weighting Mechanism assigns a voting weight to these tokens. Our toolbox currently includes
+a) Dynamic Network-Scaling 
+b) Bonded Voting Weight (currently work in progress)
+
+#### Dynamic Network-Scaling
+Weighted Voting based on Dynamic Network-Scaling is made for cases where the aggregated weight of certain stakeholder groups in a community should be balanced. We assume that tokens identify belonging to a certain stakeholder group. Note that since wallets can hold multiple token_Ids under the same smart contract, the wallets and individuals behind it can belong to multiple stakeholder groups.
+Let's take TE Academy's case: here, we have students, graduates (those who completed a learning program successfully) and experts (course lecturers). The ERC-1155 tokens in this system certify achievements in learning or providing courses. A _course author NFT_ belongs to the expert stakeholder group. A _enrolled in course A_ NFT belongs to the student stakeholder group. Our algorithm processes the following parameters: the aggregated voting power of the stakeholder groups, and their target weight (balancing). As output, it assigns a voting weight to every token_id in the system.
+Read more below (see Find your optimal parameter setting TODO)
+With the Dynamic Network-Scalling mechanism, we can now balance the total voting power these stakeholder groups can achieve collectively. Additinally, this voting power is a function of the total voting power in the system, so that the voting weight of the reputation tokens dynamically updates to the current state of the ecosystem.
+
+
+### Understand the components [add diagram]
+* Ballot (Voter Input)
+* Vote Weighting Mechanisms
+* Aggregation Rule
+* Vote Outcome (Voter Output)
+* Why simulations?
 
 
 
@@ -50,12 +66,6 @@ To apply Reputation-based Weighted Voting, take the following steps
 * Set up your voting in Snapshot
 * Run your voting
 
-### Understand the components [add diagram]
-* Ballot (Voter Input)
-* Vote Weighting Mechanisms
-* Aggregation Rule
-* Vote Outcome (Voter Output)
-* Why simulations?
 
 ---
 
