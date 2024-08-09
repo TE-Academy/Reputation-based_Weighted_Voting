@@ -3,7 +3,7 @@
 
 # Reputation-based Weighted Voting (RWV)
 
-_RWV is a project by Token Engineering Academy Research (akrtws, Eightarmsninebrainsm and Vitor Marthendal), originating from an educational program at TE Academy. It provides everything you need to roll out votings in your community, where knowledge and achievement counts: vote weighting mechanisms, a simulator, and Snapshot Strategies to be used off the shelf. If you find a bug, feel free to report. If you do a PR where tests pass, we'll be happy to merge it. And feel free to fork this repo and change it as you wish._
+_RWV is a project by Token Engineering Academy Applied Research (akrtws, Eightarmsninebrainsm and Vitor Marthendal), originating from an educational program at TE Academy. It provides everything you need to roll out votings in your community, where knowledge and achievement counts: vote weighting mechanisms, a simulator, and Snapshot Strategies to be used off the shelf. If you find a bug, feel free to report. If you do a PR where tests pass, we'll be happy to merge it. And feel free to fork this repo and change it as you wish. If you need support in building a customized voting design for your community, reach out to us via Email (address)._
 
 
 ### Introduction
@@ -61,8 +61,25 @@ b) in case you are looking for a many winners: Ranked Choice (or Quadratic Votin
 ### Voting Outcome
 All components mentioned above, the reputation tokens, weighting mechanim, ballot design, and voting rule are processed to find a voting outcome. Note that Snapshot allows for two routes, secret and open voting. In open voting, the pre-liminary voting outcome during the voting period is shown to voters. In secret voting (enabled by Shutter), the voting is only visible once the voting closes. There are many reasons to select one or the other routes, in many democratic votings votes are secret to avoid group think and vote manipulation.
 
+---
+### Setting up the Snapshot strategy
+- Provide the smart contract address of your reputation tokens
+- Select your Vote Weighting Mechanism/Snapshot Strategy:
+  - - Dynamic Network-Scaling
+  - - Bonded Voting Weight
+- Define your parameter setting (see below)
+- Set up the ballot
+- Define the voting open/closing data and final settings
+- Run the voting!
+- This tutorial walks you through the process (TODO)
 
-## 🧩 Using this framework [write a brief paragraph on every step]
+### Vote Weighting Mechanisms Specification
+* Dynamic Network-Scaling (Introduction / Use Case / Math Specification)
+* Bonded Voting Weight (Introduction / Use Case / Math Specification)
+* Definitions (terminology)
+
+_
+## Using this framework [outdated]
 To apply Reputation-based Weighted Voting, take the following steps
 * Understand the Components and Design Space (see below)
 * Define proofs of reputation in your community
@@ -71,25 +88,7 @@ To apply Reputation-based Weighted Voting, take the following steps
 * Customize and verify your Vote Weighting Mechanism
 * Set up your voting in Snapshot
 * Run your voting
-
-
----
-
-### Setting up the Snapshot strategy
-- Define the Reputation tokens you'd like to process in your voting, provide the smart contract address
-- Select your Snapshot Strategy:
-  - - Dynamic Network-Scaling
-  - - Bonded Voting Weight
-- Define your parameter setting (see below)
-- Define the ballot
-- Define the voting open/closing data and final settings
-- Run the voting!
-- This tutorial walks you through the process (TODO)
-
-### Vote Weighting Mechanisms
-* Dynamic Network-Scaling (Introduction / Use Case / Math Specification)
-* Bonded Voting Weight (Introduction / Use Case / Math Specification)
-* Definitions (terminology)
+_
 
 ### Ressources
 * Live Track 4 Video
