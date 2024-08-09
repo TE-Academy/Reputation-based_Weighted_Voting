@@ -36,7 +36,7 @@ All voting mechanisms in Reputation-based Weighted Voting Toolbox are made for E
 
 
 ### Weighting Mechanism
-The Weighting Mechanism assigns a voting weight to these tokens. Our toolbox currently includes
+The Weighting Mechanism assigns a voting weight to these tokens. Before the vote is sent to the ballot, a vote assigns certain voting power to it. Our toolbox currently includes
 1. Dynamic Network-Scaling 
 2. Bonded Voting Weight (currently work in progress)
 
@@ -48,6 +48,16 @@ With the Dynamic Network-Scalling mechanism, we can now balance the total voting
 
 #### 2. Bonded Voting Weight (currently work in progress)
 Description Voting Mechanisms (TODO: make this a campaign with the community: discussio - what should be the next mechanism we build?)
+
+### The Ballot
+The voting ballot is where votes are casted. In crypto cases, it's the frontend to cast your vote. It presents the voting options, and needs ballot design. The way the voting options are structured, and how votes are conducted [have a huge influence on the voting outcome](https://electionlab.mit.edu/research/ballot-design). In Snapshot votings, the ballot design is quite straightforward: you define one or several voting options for your community, and voters can choose one or several options in the Snapshot frontend.
+
+### Voting Rule
+The voting rule defines how votes are aggregated, sometimes also called aggregation rule. Again, the aggregation rule has a huge impact on the voting outcome. It starts if one or several winners should be chosen. The voting rule defines if and how a prize/reward is shared between winners. It also defines if all votes have an impact on the outcome, or if some are lost, e.g. because a minimum quorum was not met.
+For Reputation-based Weighted Voting in Snapshot you can choose from many options. However, we recommend to use (TODO: make a statement what to choose)
+a) in case you are looking for a single winner: Single-Winner Plurality
+b) in case you are looking for a many winners: Ranked Choice (or Quadratic Voting?)
+
 
 
 
