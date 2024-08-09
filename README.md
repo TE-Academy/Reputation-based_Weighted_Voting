@@ -58,20 +58,11 @@ For Reputation-based Weighted Voting in Snapshot you can choose from many option
 a) in case you are looking for a single winner: Single-Winner Plurality
 b) in case you are looking for a many winners: Ranked Choice (or Quadratic Voting?)
 
+### Voting Outcome
+All components mentioned above, the reputation tokens, weighting mechanim, ballot design, and voting rule are processed to find a voting outcome. Note that Snapshot allows for two routes, secret and open voting. In open voting, the pre-liminary voting outcome during the voting period is shown to voters. In secret voting (enabled by Shutter), the voting is only visible once the voting closes. There are many reasons to select one or the other routes, in many democratic votings votes are secret to avoid group think and vote manipulation.
 
 
-
-
-### Understand the components [add diagram]
-* Ballot (Voter Input)
-* Vote Weighting Mechanisms
-* Aggregation Rule
-* Vote Outcome (Voter Output)
-* Why simulations?
-
-
-
-### 🧩 Using this framework [write a brief paragraph on every step]
+## 🧩 Using this framework [write a brief paragraph on every step]
 To apply Reputation-based Weighted Voting, take the following steps
 * Understand the Components and Design Space (see below)
 * Define proofs of reputation in your community
