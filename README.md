@@ -23,7 +23,7 @@ Use the RWV Toolbox, to...
 ---
 ![01_RWV_votingcomponents](https://github.com/user-attachments/assets/a76b5d9c-2e7b-4d2f-915b-c034e3ca371c)
 
-## Understand the Components of Reputation-based Weighted Voting
+## 🧩 Understand the Components of Reputation-based Weighted Voting
 
 ### Voting Wallets carrying Reputation
 - in a voting, voters express their preferences. In on-chain votings however, consider your voters as wallets. There might be individuals behind it, or organisations controlling a multi-sig. 
@@ -37,14 +37,19 @@ All voting mechanisms in Reputation-based Weighted Voting Toolbox are made for E
 
 ### Weighting Mechanism
 The Weighting Mechanism assigns a voting weight to these tokens. Our toolbox currently includes
-a) Dynamic Network-Scaling 
-b) Bonded Voting Weight (currently work in progress)
+1. Dynamic Network-Scaling 
+2. Bonded Voting Weight (currently work in progress)
 
-#### Dynamic Network-Scaling
+#### 1. Dynamic Network-Scaling
 Weighted Voting based on Dynamic Network-Scaling is made for cases where the aggregated weight of certain stakeholder groups in a community should be balanced. We assume that tokens identify belonging to a certain stakeholder group. Note that since wallets can hold multiple token_Ids under the same smart contract, the wallets and individuals behind it can belong to multiple stakeholder groups.
 Let's take TE Academy's case: here, we have students, graduates (those who completed a learning program successfully) and experts (course lecturers). The ERC-1155 tokens in this system certify achievements in learning or providing courses. A _course author NFT_ belongs to the expert stakeholder group. A _enrolled in course A_ NFT belongs to the student stakeholder group. Our algorithm processes the following parameters: the aggregated voting power of the stakeholder groups, and their target weight (balancing). As output, it assigns a voting weight to every token_id in the system.
 Read more below (see Find your optimal parameter setting TODO)
 With the Dynamic Network-Scalling mechanism, we can now balance the total voting power these stakeholder groups can achieve collectively. Additinally, this voting power is a function of the total voting power in the system, so that the voting weight of the reputation tokens dynamically updates to the current state of the ecosystem.
+
+#### 2. Bonded Voting Weight (currently work in progress)
+Description Voting Mechanisms (TODO: make this a campaign with the community: discussio - what should be the next mechanism we build?)
+
+
 
 
 ### Understand the components [add diagram]
@@ -56,7 +61,7 @@ With the Dynamic Network-Scalling mechanism, we can now balance the total voting
 
 
 
-### Using this framework [write a brief paragraph on every step]
+### 🧩 Using this framework [write a brief paragraph on every step]
 To apply Reputation-based Weighted Voting, take the following steps
 * Understand the Components and Design Space (see below)
 * Define proofs of reputation in your community
