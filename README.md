@@ -34,6 +34,11 @@ Use the RWV Toolbox, to...
 
 All voting mechanisms in Reputation-based Weighted Voting Toolbox are made for ERC-1155 tokens. Since optimized for Snapshot votings, RWV processes tokens based on one token smart contract that you define when setting up the Snapshot strategy (see below). However, they can be adapted to ERC-20/-721 cases. Technically, any of these token types is supported by Snapshot stategies. 
 
+Examples for reputation proofs:
+- Eigentrust by Karma3Labs
+- Passport by Gitcoin
+- Optimist NFT
+https://gov.optimism.io/t/retro-funding-4-impact-metrics-a-collective-experiment/8226/7
 
 ### Weighting Mechanism
 The Weighting Mechanism assigns a voting weight to these tokens. Before the vote is sent to the ballot, a vote assigns certain voting power to it. Our toolbox currently includes
