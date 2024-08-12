@@ -38,6 +38,7 @@ Examples for reputation proofs:
 - Eigentrust by Karma3Labs
 - Passport by Gitcoin
 - Optimist NFT
+- create own graph with closest connections to badgeholder community a set of around 5000 addresses that have the closest social connection to the badgeholder community
 https://gov.optimism.io/t/retro-funding-4-impact-metrics-a-collective-experiment/8226/7
 
 ### Weighting Mechanism
