@@ -3,7 +3,12 @@
 
 # Reputation-based Weighted Voting (RWV)
 
-_RWV is a project by Token Engineering Academy Applied Research (akrtws, Eightarmsninebrainsm and Vitor Marthendal), originating from an educational program at TE Academy. It provides everything you need to roll out votings in your community, where knowledge and achievement counts: vote weighting mechanisms, a simulator, and Snapshot Strategies to be used off the shelf. If you find a bug, feel free to report. If you do a PR where tests pass, we'll be happy to merge it. And feel free to fork this repo and change it as you wish. If you need support in building a customized voting design for your community, reach out to us via Email (address)._
+_RWV is a project by Token Engineering Academy Applied Research (akrtws, Eightarmsninebrainsm and Vitor Marthendal), originating from an educational program at TE Academy. It provides everything you need to roll out votings in your community, where knowledge and achievement counts: vote weighting mechanisms, a simulator, and Snapshot Strategies to be used off the shelf. If you find a bug, feel free to report. If you do a PR where tests pass, we'll be happy to merge it. 
+
+CALL TO ACTION FOR OPEN-SOURCE DEVELOPMENT (discuss if should be rolled out now)
+Below you find the current proofs and mechanisms our framework supports. What other proofs should we integrate? What other mechanisms should be covered? Learn more, and submit your proposal here: https://docs.opensource.observer/blog/request-for-impact-metrics
+
+If you need support in building a customized voting design for your community, reach out to us via Email (address)._
 
 
 ### Introduction
