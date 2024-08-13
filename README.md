@@ -49,7 +49,9 @@ https://gov.optimism.io/t/retro-funding-4-impact-metrics-a-collective-experiment
 ### Weighting Mechanism
 The Weighting Mechanism assigns a voting weight to these tokens. Before the vote is sent to the ballot, a vote assigns certain voting power to it. Our toolbox currently includes
 1. Dynamic Network-Scaling 
-2. Bonded Voting Weight (currently work in progress)
+2. Indicator Function (a particular set of proofs to gain weight)
+
+Formulate as constrained optimization problem, and how to approach it.
 
 #### 1. Dynamic Network-Scaling
 Weighted Voting based on Dynamic Network-Scaling is made for cases where the aggregated weight of certain stakeholder groups in a community should be balanced. We assume that tokens identify belonging to a certain stakeholder group. Note that since wallets can hold multiple token_Ids under the same smart contract, the wallets and individuals behind it can belong to multiple stakeholder groups.
@@ -74,6 +76,8 @@ All components mentioned above, the reputation tokens, weighting mechanim, ballo
 
 ---
 ### Setting up the Simulations, verify your parameter settings
+- Nakamoto Coefficient
+- Swifty-Number, sybill vulnerability
 
 ### Setting up the Shapshot Strategy
 - Provide the smart contract address of your reputation tokens
