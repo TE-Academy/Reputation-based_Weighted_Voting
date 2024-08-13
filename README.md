@@ -70,6 +70,7 @@ The voting rule defines how votes are aggregated, sometimes also called aggregat
 For Reputation-based Weighted Voting in Snapshot you can choose from many options. However, we recommend to use (TODO: make a statement what to choose)
 a) in case you are looking for a single winner: Single-Winner Plurality
 b) in case you are looking for a many winners: Ranked Choice (or Quadratic Voting?)
+Note: Properties emerge based on combination of Weighting & Voting Rule! Both the Weighting Mechanisms and the Voting Rule have huge impact on the outcome, and interact/have dependencies, that's why you should always evaluate both in combination.
 
 ### Voting Outcome
 All components mentioned above, the reputation tokens, weighting mechanim, ballot design, and voting rule are processed to find a voting outcome. Note that Snapshot allows for two routes, secret and open voting. In open voting, the pre-liminary voting outcome during the voting period is shown to voters. In secret voting (enabled by Shutter), the voting is only visible once the voting closes. There are many reasons to select one or the other routes, in many democratic votings votes are secret to avoid group think and vote manipulation.
