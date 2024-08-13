@@ -96,6 +96,7 @@ All components mentioned above, the reputation tokens, weighting mechanim, ballo
 
 ### Vote Weighting Mechanisms Specification
 * Dynamic Network-Scaling (Introduction / Use Case / Math Specification)
+* Core feature: balancing, more is more between groups, however, more is less within a category, how to improve? Comments on reputation and zero-sum games
 * Bonded Voting Weight (Introduction / Use Case / Math Specification)
 * Definitions (terminology)
 
