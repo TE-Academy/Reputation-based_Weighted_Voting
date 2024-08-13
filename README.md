@@ -73,7 +73,9 @@ b) in case you are looking for a many winners: Ranked Choice (or Quadratic Votin
 All components mentioned above, the reputation tokens, weighting mechanim, ballot design, and voting rule are processed to find a voting outcome. Note that Snapshot allows for two routes, secret and open voting. In open voting, the pre-liminary voting outcome during the voting period is shown to voters. In secret voting (enabled by Shutter), the voting is only visible once the voting closes. There are many reasons to select one or the other routes, in many democratic votings votes are secret to avoid group think and vote manipulation.
 
 ---
-### Setting up the Snapshot strategy
+### Setting up the Simulations, verify your parameter settings
+
+### Setting up the Shapshot Strategy
 - Provide the smart contract address of your reputation tokens
 - Select your Vote Weighting Mechanism/Snapshot Strategy:
   - - Dynamic Network-Scaling
@@ -83,6 +85,8 @@ All components mentioned above, the reputation tokens, weighting mechanim, ballo
 - Define the voting open/closing data and final settings
 - Run the voting!
 - This tutorial walks you through the process (TODO)
+
+- Different/customized UI connected to Snapshot UI (TODO)
 
 ### Vote Weighting Mechanisms Specification
 * Dynamic Network-Scaling (Introduction / Use Case / Math Specification)
