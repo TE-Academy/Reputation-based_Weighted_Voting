@@ -19,8 +19,8 @@ This RWV Toolbox enables communities, governance researchers, and DAO participan
 Use the RWV Toolbox, to...
 * Integrate on-chain proofs to define voting power (ERC-20/ERC-721/ERC-1155)
 * Select vote weighting mechanisms and customize parameters to make the vote weighting fit to your community
-* Run ready-to-use simulations to test your parameter setting (dictatorship-proof, sybil resistance)
-* Role out a RWV on Snapshot using the RWV Snapshot Strategies and your parameter setting 
+* Run a mechanism audit to find critical vulnerabilities (dictatorship, sybil resistance)
+* Role out your voting (link to understand the components, voting rule)
 
 ### Table of Contents
 (links to sections below)
