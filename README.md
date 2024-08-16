@@ -79,20 +79,19 @@ All components mentioned above, the reputation tokens, weighting mechanim, ballo
 ---
 ### Setting up the Simulations, verify your parameter settings
 - Nakamoto Coefficient
-- Swifty-Number, sybill vulnerability
+- see https://github.com/TE-Academy/Reputation-based_Weighted_Voting/blob/ock/issue-26/simulation-demo/notebooks/demonstration.ipynb
 
-### Setting up the Shapshot Strategy
-- Provide the smart contract address of your reputation tokens
-- Select your Vote Weighting Mechanism/Snapshot Strategy:
+### Setting up a reputation-based voting
+- Define your proofs of reputation
+- Select your Vote Weighting Mechanism:
   - - Dynamic Network-Scaling
-  - - Bonded Voting Weight
-- Define your parameter setting (see below)
+  - - second?
+- Define your parameter setting, optimize towards your requirements (see docs link)
 - Set up the ballot
-- Define the voting open/closing data and final settings
-- Run the voting!
-- This tutorial walks you through the process (TODO)
+- Define your aggregation rule (voting rule) 
+- This tutorial walks you through the process (TODO, create video)
 
-- Different/customized UI connected to Snapshot UI (TODO)
+- Different/customized UI connected to Snapshot UI (TODO?)
 
 ### Vote Weighting Mechanisms Specification
 * Dynamic Network-Scaling (Introduction / Use Case / Math Specification)
