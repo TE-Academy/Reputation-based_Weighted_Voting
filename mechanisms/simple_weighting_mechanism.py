@@ -45,7 +45,7 @@ class SimpleCredentialWeightingMechanism:
         for cred in cred_list:
             # Add the weight of the current credential to the total weight
             # If the credential is not found in credential_weights, get() returns 0 by default
-            weight += cred_weights_to_use.get(cred, 0)
+            weight += cred_weights_to_use.get(cred, 0) * cred_list.get(cred, 0)
         
         return weight
          

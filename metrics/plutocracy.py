@@ -1,15 +1,15 @@
 from typing import Dict
 
-def calc_nakamoto_coefficient(weighted_voters: Dict[str, Dict[str, float]],
+def calc_nakamoto_coefficient_additive(weighted_voters: Dict[str, Dict[str, float]],
                         winning_pct: float = 0.5,
                          verbose: bool = False):
     """
-    Calculates the smallest number of voters necessary to form an invincible plutocracy.
+    Calculates the smallest number of voters necessary to form an invincible plutocracy
+    under an additive voting mechanism. Notice that this wi
     """
     # Do checking on format
     for voter, info in weighted_voters.items():
         assert isinstance(info, dict), f"Expected a dictionary for voter {voter}, got {type(info)}"
-        assert len(info) == 1, f"Expected only one key for voter {voter}, got {len(info)}"
         assert "weight" in info, f"Expected key 'weight' for voter {voter}, got {info.keys()}"
 
     sorted_voter_copy = {k: v 
@@ -43,3 +43,11 @@ def calc_nakamoto_coefficient(weighted_voters: Dict[str, Dict[str, float]],
         print(f"The Nakamoto Coefficient is {nakamoto_coefficient}.")
 
     return nakamoto_coefficient
+
+def calc_swifty_number_additive(weighted_voters: Dict[str, Dict[str, float]],
+                        winning_pct: float = 0.5,
+                        nft_weight_dict: Dict[str, float] = None,
+                        verbose: bool = False):
+    """
+    Calculate the swifty number. 
+    """
