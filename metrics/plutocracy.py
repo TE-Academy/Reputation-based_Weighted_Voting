@@ -51,3 +51,4 @@ def calc_swifty_number_additive(weighted_voters: Dict[str, Dict[str, float]],
     """
     Calculate the swifty number. 
     """
+    #TODO: 
