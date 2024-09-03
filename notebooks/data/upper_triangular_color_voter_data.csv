@@ -1,0 +1,7 @@
+,red_1,red_2,blue_1,blue_2,yellow_1,yellow_2
+voter_0, 1, 1, 1, 1, 1, 1
+voter_1, 0, 1, 1, 1, 1, 1
+voter_2, 0, 0, 1, 1, 1, 1
+voter_3, 0, 0, 0, 1, 1, 1
+voter_4, 0, 0, 0, 0, 1, 1
+voter_5, 0, 0, 0, 0, 0, 1
