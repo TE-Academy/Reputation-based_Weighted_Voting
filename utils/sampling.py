@@ -25,6 +25,9 @@ def sample_dict_keys_values(input_dict: dict, sample_size: int):
     return sampled_dict
 
 def sample_voting_population_by_size(input_dict: dict, sample_size: int):
+    """
+    Sample from voting population input_dict by specific number of voters sample_size.  
+    """
     sampled_dict = sample_dict_keys_values(input_dict = input_dict, sample_size = sample_size)
     return sampled_dict
 
