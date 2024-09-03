@@ -109,7 +109,7 @@ def calc_gini_coefficient(all_weighted_voters: Dict[str, Dict[str, float]],
     gini_coefficient = sum_pairwise_diffs/(2 * num_voters * num_voters * average_weight)
 
     if verbose:
-        print(f"The gini coefficient is {gini_coefficient}")
+        print(f"The Gini Coefficient is {gini_coefficient}")
 
     return gini_coefficient
 
@@ -148,6 +148,9 @@ def calc_theil_L_index(all_weighted_voters: Dict[str, Dict[str, float]],
 
 def calc_herfindahl_hirschman_index(all_weighted_voters: Dict[str, Dict[str, float]],
                                verbose = False):
+    """
+    Calculates Herfindahl-Hirschman index. 
+    """
     weights = [info.get("weight", 0) for _, info in all_weighted_voters.items()]
     sum_weights = sum([weight for weight in weights])
     sum_squared_weights = sum([weight*weight for weight in weights])
@@ -156,10 +159,7 @@ def calc_herfindahl_hirschman_index(all_weighted_voters: Dict[str, Dict[str, flo
 
     if verbose:
         print(f"The Herfindahl-Hirschman Index is {herfindahl_hirschman_index}.")
-        
+
     return herfindahl_hirschman_index
-
-
-
 
     
