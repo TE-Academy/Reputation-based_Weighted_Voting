@@ -47,6 +47,28 @@ Examples for reputation proofs:
 - create own graph with closest connections to badgeholder community a set of around 5000 addresses that have the closest social connection to the badgeholder community
 https://gov.optimism.io/t/retro-funding-4-impact-metrics-a-collective-experiment/8226/7
 
+### Reputation Proofs
+
+#### OpenRank by Karma3Labs
+
+OpenRank offers advanced ranking and recommendation systems for social graphs using multiple algorithms, including Eigentrust. These rankings and reputations are easily accessible to any smart contract, protocol, or through [APIs](https://docs.openrank.com/openrank-sdk/publishing-rankings-with-openrank-sdk), making them ideal for both on-chain voting mechanisms (like Tally and SnapshotX) and off-chain systems (such as Snapshot).
+
+The social graphs can be sourced from platforms like Farcaster, Lens Protocol, and various on-chain data. Reputation algorithms are fully customizable to meet the specific needs of any community. As a decentralized reputation system, OpenRank enables ranking and recommending users based on their activity and contributions, fostering a more engaged and trustworthy community.
+
+#### Gitcoin Passport
+
+Gitcoin Passport leverages [Verifiable Credentials](https://www.dock.io/post/verifiable-credentials) (offchain and cryptographically verified attestations) to authenticate users based on multiple "Stamps" from different authenticators, such as Google and LinkedIn (Web2), Guild and Snapshot (Web3), and onchain transactions. The sum of these stamps is aggregated into a single Passport score, which can be used to grant access to exclusive features, rewards, and voting power in the Gitcoin ecosystem. All credentials maintain user privacy but are easily verifiable offchain, making them extremely simple to integrate as proofs for communities using offchain voting mechanisms. A voting mechanism can request either a threshold of total Passport score or a specific stamp to grant voting power to the user. The passport score and stamps can be easily accessed through an [API](https://docs.passport.xyz/building-with-passport/passport-api/api-reference).
+
+#### DeVouch
+
+DeVouch uses [Ethereum Attestation Service](https://attest.org/) to create onchain attestations for flagging projects from Gitcoin, Giveth and Optimism Retro Funding. Users can vouch for different projects, creating a social graph between members of reputable organizations and impactful projects. A Graphql API containing the vouches is [available](https://optimism.backend.devouch.xyz/graphql). Since this project is specific to a subset of communities, it would be more interesting in a voting mechanism to use standalone vouches (EAS attestations) as a proof of reputation for each community.
+
+#### Ethereum Attestation Service (EAS)
+
+EAS allows to make attestations, onchain or offchain statements about anything.
+![Alt text](image.png)
+The attestations can be stored onchain or offchain and queried through a [graphql API](https://docs.attest.org/docs/developer-tools/api). Any kind of reputation dynamics can be built on top of this service, since any entity can make any arbitrary statement about any other entity. This is a very flexible and powerful tool for building reputation systems such as [digital identity](https://docs.attest.org/docs/idea--zone/use--case--examples/digital-identity), [voting systems](https://docs.attest.org/docs/idea--zone/use--case--examples/voting-systems), [reputation systems](https://docs.attest.org/docs/idea--zone/use--case--examples/reputation-systems) and [much more](https://docs.attest.org/docs/category/example-use-cases).
+
 ### Weighting Mechanism
 The Weighting Mechanism assigns a voting weight to these tokens. Before the vote is sent to the ballot, a vote assigns certain voting power to it. Our toolbox currently includes
 1. Dynamic Network-Scaling 
