@@ -78,15 +78,16 @@ def calc_nakamoto_coefficient_additive(weighted_voters: Dict[str, Dict[str, floa
 def calc_swifty_cancellation_number_additive(all_weighted_voters: Dict[str, Dict[str, float]],
                         voters_to_cancel: List[str],
                         nft_weight_dict: Dict[str, float] = None,
-                        verbose: bool = False):
+                        verbose: bool = False) -> float:
     """
     Calculate the swifty cancellation number for a group of voters: the number of lowest-weight votes necessary to cancel this specific group. 
 
     
     """
 
-    weight_to_cancel = {voter: all_weighted_voters.get(voter).get("weight") 
+    voters_to_cancel = {voter: all_weighted_voters.get(voter).get("weight") 
                                  for voter in voters_to_cancel}
+    weight_to_cancel = sum([weight for weight in voters_to_cancel.values()])
     minimum_weight_possible = min(nft_weight_dict.values())
     swifty_cancellation_number = weight_to_cancel/minimum_weight_possible
 
