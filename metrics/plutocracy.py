@@ -89,7 +89,8 @@ def calc_swifty_cancellation_number_additive(all_weighted_voters: Dict[str, Dict
                                  for voter in voters_to_cancel}
     weight_to_cancel = sum([weight for weight in voters_to_cancel.values()])
     minimum_weight_possible = min(nft_weight_dict.values())
-    swifty_cancellation_number = weight_to_cancel/minimum_weight_possible
+    total_weight_to_cancel = sum(weight_to_cancel.values())
+    swifty_cancellation_number = total_weight_to_cancel / minimum_weight_possible
 
     if verbose:
         print(f"The swifty cancellation number is {swifty_cancellation_number}")
