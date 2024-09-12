@@ -23,6 +23,7 @@ class ReweightingMechanism:
         self.current_voter_data = self.create_current_voter_data()
         self.group_masks = self.process_group_rules_to_masks()
         self.current_credential_weights = deepcopy(initial_credential_weights)
+        self.voters = list(self.current_voter_data.index)
 
     def calculate_target_cweights(self) -> Dict:
         """
