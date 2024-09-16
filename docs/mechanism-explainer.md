@@ -429,9 +429,19 @@ Here's how it actually works, step-by-step:
 After this process has completed, the final weights are set. The user can then test using their desired metrics, to see if the weights produce acceptable properties. If not, they can re-set the initial weights and start over. (This generate-test-and-reset process could also be automated.)
 
 
-### Ordered Dynamical-Network Scaling
+### Ordered Dynamic Network Weight Scaling
 
-**TODO:** Explain this mechanism.  
+This mechanism is similar to *Proportional Dynamic Network Weight Scaling*. In particular, it takes credential group definitions, group cweight requirements, and initial credential weights from the user. It then goes through the credential groups in a particular order, re-weighting individual credentials so that the requirements are met.
+
+The key difference between the *proportional* approach and the *ordered* approach is this: the user specifies the *order* in which cweights should go. For an example, the designers at *CrayonDAO* might insist that:
+
+$\text{red\_cweight} \geq \text{green\_cweight} \geq \text{other\_cweight}.$
+
+For the re-weighting step, the mechanism first checks if the group already satisfies the necessary property of being greater than or equal to the previous group in the order. If yes, no re-weighting needs to happen. If no, the mechanism will re-weight the relevant credentials in the group so that the current group's `cweight` is equal to the prior group's `cweight`. 
+
+
+
+
 
  
 
