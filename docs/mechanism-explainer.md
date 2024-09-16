@@ -1,5 +1,6 @@
 # Overview of Mechanisms 
-by: Octopus
+by: Octopus 
+
 Researcher, Eight Arms Nine Brains
 
 ## Introduction
@@ -392,10 +393,41 @@ The solution is to use an **indicator** which creates an additional credential. 
 
 This additional information makes the calculating and re-weighting processes much easier. Let's turn our attention to the mechanism of how this re-weighting works. 
 
+### Proportional Dynamic Network Weight Scaling
 
-### Proportional Dynamical-Network Scaling
+In **Proportional Dynamic Network Weight Scaling**, the user speciifes:
+1. The group rules for NFTs: precise logic around how NFTs should be summed to calculate their *cweight*. 
+2. The proportions that each NFT grouping should have, in terms of total cweight, once the process is complete.
+3. The initial weights for each NFT. 
 
-**TODO:** Explain this mechanism.  
+The algorithm will go in order from smallest cweight proportion to largest, setting the eligible rules to achieve the correct proportion. 
+
+As an example, let's suppose that the user gives the following input logic:
+1. The three credential groups are `red`, `green`, and `other`. 
+2. * To calculate the cweight of `green`, add up the weighted `red_1` and `red_2` entries for all accounts. 
+* The `red_1` and `red_2` credentials should be re-weighted to make `red` have the right proprtion. 
+* To calculate the cweight of `green`, add up the `green`, `blue_1`, `blue_2`, `yellow_1`, and `yellow_2` entries for the accounts that hold a `green` credential. 
+* Only the `green` credential will be re-weighted for the `green` group. 
+* To calculate the cweight of `other`, add up the `green`, `blue_1`, `blue_2`, `yellow_1`, and `yellow_2` entries for the accounts that do not hold a `green` credential. 
+
+
+Here's how it actually works, step-by-step: 
+**Step 0:** The user sets initial data: 
+* **Desired cweight Proportions:** `red`: 0.5, `green`: 0.3, `other`: 0.2. 
+* **Initial Weights:** `red_1`: 5.0, `red_2`: 4.0, `blue_1`: 2.0, `blue_2`: 2.0, `yellow_1`: 2.0, `yellow_2`: 1.0. 
+**Step 1:** For the `other` group, everything will stay as-is: there is no need to re-weight. We calculate the `other_cweight` as **TODO: calculate the cweight**. 
+
+**Step 2:** 
+* For the `green` group, we calculate the `initial_cweight` using the `yellow_1`, `yellow_2`, `blue_1` and `blue_2` credentials. 
+* We do not re-set the weights of any `yellow` or `blue` credentials, since they have already been set. 
+* We re-weight only the `green` credential, so that the final cweight of the `green` credential group is exactly 1.5 times that of `other`. (1.5 = 0.3/0.2)
+
+**Step 3:** 
+* For the `red` group, we calculate the `initial_cweight` using the initial weights of `red_1` and `red_2`. 
+* We re-weight the `red_1` and `red_2` credentials, so that the final cweight of the `red` credential group is exactly 2.5 times that of other. (2.5 = 0.5/0.2) 
+
+After this process has completed, the final weights are set. The user can then test using their desired metrics, to see if the weights produce acceptable properties. If not, they can re-set the initial weights and start over. (This generate-test-and-reset process could also be automated.)
+
 
 ### Ordered Dynamical-Network Scaling
 
