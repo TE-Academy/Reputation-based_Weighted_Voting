@@ -5,7 +5,32 @@
 ## Begin template  for testing.  ##
 ###################################
 
-#TODO: Add the template for testing here. 
+
+# Here is a basic template that can be used for testing.
+# def test_proporty_of_function(input_args_to_add):
+#    
+#    function_name = "a string to tell which function we are testing."
+#    property_name = "a string to tell which property we are testing "
+# 
+#    # May need to process the input args somehow. 
+#    processed_input = input_we_select_from_input_args
+#     
+#    # Define should we expect the output to be, from this input? 
+#    expected_output = VALUE_SET_BY_TESTER # What do we expect from doing this?
+# 
+#    # Calculate the output that is actually produced
+#    actual_output = function_being_tested(processed_input)
+#     
+#    # Check if actual output matches expected. Replace == as needed with appropriate operator. 
+#    check_passed = (expected_output == actual_output)
+#    
+#    # Create msg to give if check failed
+#    result_msg = f{"The function {Function_name} does not have {property_name}."
+#    input_output_details = f{"On input {str(processed_input)}, expected {expected_output} but got {actual_output}"}
+#    failure_msg = result_msg + "\n" + input_output_details
+#    
+#    # Give result and msg
+#    assert check_passed, failure_msg 
 
 ###################################
 ## End  template  for testing.   ##
@@ -67,7 +92,7 @@ def setup_proportional_reweighting_mechanism():
 
     return pr_mechanism
 
-def test_create_modified_voter_data(setup_proportional_reweighting_mechanism):
+def test_create_modified_voter_data(proportional_reweighting_mechanism):
     pr_mechanism = setup_proportional_reweighting_mechanism
     
     # Expected result
@@ -88,7 +113,7 @@ def test_create_modified_voter_data(setup_proportional_reweighting_mechanism):
     
     assert condition_check, condition_not_met_msg
 
-def test_process_group_rules_to_masks(setup_proportional_reweighting_mechanism):
+def test_process_group_rules_to_masks(proportional_reweighting_mechanism):
     pr_mechanism = setup_proportional_reweighting_mechanism
     
     # Expected result
