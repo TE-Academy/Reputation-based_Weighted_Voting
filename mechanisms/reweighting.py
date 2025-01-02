@@ -189,9 +189,6 @@ class ReweightingMechanism:
         return voter_weights_dict
 
 
-
-
-    # TODO: Test this function. 
     def calc_all_voter_weights(self,
                                 voter_data_to_use: VoterData = None,
                                 weights_to_use: Dict[str, float] = None):
